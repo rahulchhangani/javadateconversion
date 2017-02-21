@@ -1,0 +1,19 @@
+    	
+      String dateinstance = "2017-02-21";
+      String date = convertDate(dateinstance);
+      
+      
+      // date conversion method
+      public String convertDate(String dateinstance){    		
+    		try {
+            //use same format as string
+     			  Date dt = new SimpleDateFormat("yyyy-MM-dd").parse(dateinstance); //converted to date
+	  			  date = currentDate2.format(dt);
+		   
+       } catch (Exception e) {
+				// here exception to be handeled are NullPointerException, ParseException
+        //e.printStackTrace();
+			}
+    		
+    	return date;
+    	}
